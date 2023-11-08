@@ -3,8 +3,8 @@
 
 int main(int argc, char *argv[])
 {
-   int n1;
-     int n2;
+     float n1;
+     float n2;
      int operacao;
      float total;
   
@@ -17,41 +17,41 @@ int main(int argc, char *argv[])
      scanf("%d", &operacao);
   
      printf("Digite o 1 numero: ");
-     scanf("%d", &n1);
+     scanf("%.2f ", &n1);
      printf("Digite o 2 numero: ");
-     scanf("%d", &n2);
+     scanf("%.2f", &n2);
   
   switch(operacao){
                    
 		case 1:		
 			total = n1 - n2;
-			printf("%d - %d = %d",n1,n2,total);
+			printf("%2.f - %2.f = %2.f",n1,n2,total);
     		break;
     		
 		case 2:
 			
 			total = n1 + n2;
-			printf("%d + %d = %d",n1,n2,total);
+			printf("%.2f + %.2f = %.2f",n1,n2,total);
     		break;
     		
 		case 3:
 			
 			total = n1 * n2;
-			printf("%d * %d = %d",n1,n2,total);
+			printf("%.2f * %.2f = %.2f",n1,n2,total);
 			break;
 			
 		case 4:
 			
 			total = n1 / n2;
-			printf("%d / %d = %d",n1,n2,total);
+			printf("%.2f / %2.f = %.2f",n1,n2,total);
 			break;
 		
 		default:
-            prinft("Operação invalida");
+            printf("Operação invalida");
             break;
   }     
                   
-  
-  system("PAUSE");	
+ 
   return 0;
 }
+
